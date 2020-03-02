@@ -4,8 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>IndexVideos</title>
-    
+    <title>Home</title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <meta charset="UTF-8">
@@ -19,6 +19,8 @@
     <h1>Menu de Opciones</h1>
     <a href="/Video/Create">Agregar Video</a>
     <hr />
-    <a href="/Video/Delete">EliminarVideo</a>
+    <a href="/Video/Delete">Eliminar Video</a>
+    <hr />
+    <a href="/Video/Edit">Actualizar Video</a>
 </body>
 </html>
