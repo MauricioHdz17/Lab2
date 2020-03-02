@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>IndexVideos</title>
+    
 </head>
 <body>
   <meta charset="UTF-8">
@@ -17,5 +18,7 @@
 <body>
     <h1>Menu de Opciones</h1>
     <a href="/Video/Create">Agregar Video</a>
+    <hr />
+    <a href="/Video/Delete">EliminarVideo</a>
 </body>
 </html>

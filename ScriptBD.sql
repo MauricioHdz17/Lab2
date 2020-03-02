@@ -19,3 +19,5 @@ begin
 end
 
 EXEC sp_video_insertar 1,'Video 1',1,'yotubue.com'
+
+Select*from Video

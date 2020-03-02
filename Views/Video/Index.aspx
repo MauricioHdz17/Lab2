@@ -7,7 +7,6 @@
     <title>Index</title>
     </head>
 <body>
-    <h1>Lista de videos registrados
-    </h1>
+    <h1>Lista de videos registrados</h1>
 </body>
 </html>
