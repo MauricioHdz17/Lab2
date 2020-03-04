@@ -30,4 +30,11 @@ begin
 	Update Video set titulo = @titulo, repro = @repro, url = @url where idVideo = @idVideo
 end
 
+Create procedure sp_video_borrar
+@idVideo int
+as
+begin 
+	delete from Video Where idVideo = @idVideo
+end
+
 Select*from Video
