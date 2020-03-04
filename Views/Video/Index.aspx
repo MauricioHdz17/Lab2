@@ -8,5 +8,17 @@
     </head>
 <body>
     <h1>Lista de videos registrados</h1>
+    Hay<%: ((System.Data.DataTable)ViewData ["DataVideo"]).Rows.Count %> videos
+    <hr />
+    <%
+        foreach (System.Data.DataRow Video in ((System.Data.DataTable)ViewData["DataVideo"]).Rows)
+        {%>
+        <p><%: Video["titulo"].ToString()%></p>
+        <iframe width="560" height = "315" src = "<%: Video["url"].ToString() %>"
+        frameborder="0" allow ="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfrullscreen></iframe>
+        <%      
+        }     
+        %>
 </body>
 </html>

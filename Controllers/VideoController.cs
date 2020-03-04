@@ -16,12 +16,15 @@ namespace MVCLaboratorio.Controllers
         
         public ActionResult Index()
         {
+            ViewData["DataVideo"] = BaseHelper.ejecutarConsulta("sp_video_consultar", CommandType.StoredProcedure);
             return View();
+            
         }
         //Muestra la interfaz
         public ActionResult Create()
         {
             return View();
+           
         }
         //Procesa los datos 
         [HttpPost]
