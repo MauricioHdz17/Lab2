@@ -20,4 +20,14 @@ end
 
 EXEC sp_video_insertar 1,'Video 1',1,'yotubue.com'
 
+Create procedure sp_video_actualizar
+@idVideo int,
+@titulo varchar,
+@repro int,
+@url varchar
+as
+begin 
+	Update Video set titulo = @titulo, repro = @repro, url = @url where idVideo = @idVideo
+end
+
 Select*from Video
