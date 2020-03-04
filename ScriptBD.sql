@@ -38,3 +38,9 @@ begin
 end
 
 Select*from Video
+
+Create procedure sp_video_consultar
+as
+begin
+	Select*from Video
+end
